@@ -1,0 +1,44 @@
+---
+title: Cowegis Handbuch
+description: Dokumentation für den Cowegis-Stack – interaktive Karten mit Contao.
+template: splash
+hero:
+  tagline: Content Web GIS – interaktive Karten mit Contao pflegen und erweitern.
+  image:
+    file: ../../../assets/cowegis-logo.svg
+  actions:
+    - text: Zum Einstieg
+      link: /docs/de/einstieg/ueberblick/
+      icon: right-arrow
+    - text: Auf GitHub ansehen
+      link: https://github.com/cowegis
+      icon: external
+      variant: minimal
+---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## Wo willst du hin?
+
+<CardGrid>
+  <LinkCard
+    title="Für Redakteure"
+    href="/docs/de/redakteure/"
+    description="Karten, Layer, Marker und Controls im Contao-Backend pflegen."
+  />
+  <LinkCard
+    title="Für Integratoren"
+    href="/docs/de/integratoren/"
+    description="Cowegis im Projekt installieren, konfigurieren und betreiben."
+  />
+  <LinkCard
+    title="Stack erweitern"
+    href="/docs/de/erweitern/"
+    description="Eigene Layer- und Icon-Typen, Hydratoren und Events."
+  />
+  <LinkCard
+    title="Referenz"
+    href="/docs/de/referenz/"
+    description="DCA-Tabellen, Karten-API und Glossar zum Nachschlagen."
+  />
+</CardGrid>
